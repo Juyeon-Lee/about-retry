@@ -31,7 +31,7 @@ public class RetryListener extends RetryListenerSupport {
 
     @Override
     public <T, E extends Throwable> boolean open(RetryContext context, RetryCallback<T, E> callback) {
-        log.info("Retryable method open-at:{}", context.getAttribute(RetryContext.NAME));
+        log.info("Retryable method open");
 
         return super.open(context, callback);
     }
